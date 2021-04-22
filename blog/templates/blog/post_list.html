@@ -6,7 +6,7 @@
 	    <article>
 	        <time>published: {{ post.published_date }}</time>
 	        <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
-	        #this creates link from title to details view page
+	        
 	        <p>{{ post.text|linebreaksbr }}</p>
 	    </article>
 	{% endfor %}
